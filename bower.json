@@ -1,0 +1,21 @@
+{
+  "name": "bi-el-d",
+  "version": "0.0.1",
+  "homepage": "https://github.com/abraverm/bi-el-d",
+  "authors": [
+    "Alexander Braverman <abraverm@redhat.com>"
+  ],
+  "description": "Business Intelligence ElasticSearch Logstash Dashboard",
+  "license": "GPLv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "bi-el-d",
+  "version": "0.0.1",
+  "description": " Business Intelligence ElasticSearch Logstash Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abraverm/bi-el-d.git"
+  },
+  "keywords": [
+    "elasticsearch"
+  ],
+  "author": "Alexander Braverman Masis",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/abraverm/bi-el-d/issues"
+  },
+  "devDependencies": {
+    "bower": "~1.4.1",
+    "grunt-cli": "~0.1.13",
+    "grunt": "~0.4.5",
+    "grunt-wiredep": "~2.0.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "apache-server-configs": "~2.14.0",
+    "time-grunt": "~1.2.0",
+    "load-grunt-tasks": "~3.1.0",
+    "jshint-stylish": "~1.0.2",
+    "jshint": "~2.7.0",
+    "grunt-newer": "~1.1.0",
+    "grunt-concurrent": "~1.0.0",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-connect": "~0.10.1",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-usemin": "~3.0.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-cssmin": "~0.12.3",
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-rev": "~0.1.0",
+    "grunt-contrib-htmlmin": "~0.4.0",
+    "grunt-svgmin": "~2.0.1",
+    "grunt-contrib-imagemin": "~0.9.4"
+  }
+}
