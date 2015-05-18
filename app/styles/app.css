@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
 /*!
  * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -16,15 +18,31 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        background: rgba(255, 255, 255, 0.95);
+        -webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.05),0 1px 3px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.05),0 1px 3px rgba(0, 0, 0, 0.15);
+        /*padding: 20px 0;*/
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
+
     .top-nav-collapse {
         padding: 0;
     }
+}
+
+.logo {
+    font-size: 300px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 0px 15px 16px #555;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #2fa4e7;
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -33,9 +51,14 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background-image: url("../../images/intro.jpg");
+    background-position: center;
+    min-height : 100%;
+    min-width : 100%;
+    background-repeat:no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .about-section {
@@ -69,4 +92,131 @@ of those sections to manage the look and feel of the site. */
 
 .navbar-brand {
     padding: 0px 0;
+}
+
+.vertical-center {
+    min-height: 90%;  /* Fallback for vh unit */
+    /*min-height: 100vh; /!* You might also want to use*/
+                        /*'height' property instead.*/
+
+                        /*Note that for percentage values of*/
+                        /*'height' or 'min-height' properties,*/
+                        /*the 'height' of the parent element*/
+                        /*should be specified explicitly.*/
+
+                        /*In this case the parent of '.vertical-center'*/
+                        /*is the <body> element *!/*/
+
+    /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+    -webkit-align-items : center;
+    -moz-box-align : center;
+    -ms-flex-align : center;
+    align-items : center;
+
+    /* In legacy web browsers such as Firefox 9
+       we need to specify the width of the flex container */
+    width: 100%;
+
+    /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+       hence the bootstrap's container won't be aligned to the center anymore.
+
+       Therefore, we should use the following declarations to get it centered again */
+    -webkit-box-pack : center;
+    -moz-box-pack : center;
+    -ms-flex-pack : center;
+    -webkit-justify-content : center;
+    justify-content : center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 16px;
+    width: 65%;
+}
+
+.btn-lg {
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: white;
+    border-color: white;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: white;
+    color: white;
+    box-shadow: none;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-down {
+    bottom: 0;
 }

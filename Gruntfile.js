@@ -27,7 +27,7 @@ module.exports = function (grunt) {
           process: true
         },
         files: {
-          'dist/index.html': ['<%= config.app %>/index.html']
+          '<%= config.app %>/index.html': ['<%= config.app %>/index.html']
         }
       }
     },
@@ -150,17 +150,17 @@ module.exports = function (grunt) {
       dist: {
         files: {
           src: [
-            '<%= config.dist %>/scripts/{,*/}*.js',
-            '<%= config.dist %>/styles/{,*/}*.css',
+            '<%= config.dist %>/assets/scripts/{,*/}*.js',
+            '<%= config.dist %>/assets/css/{,*/}*.css',
             '<%= config.dist %>/images/{,*/}*.*',
-            '<%= config.dist %>/styles/fonts/{,*/}*.*',
+            '<%= config.dist %>/assets/css/fonts/{,*/}*.*',
             '<%= config.dist %>/*.{ico,png}'
           ]
         }
       }
     },
 
-    // Reads HTML for usemin blocks to enable smart builds that automatically
+     // Reads HTML for usemin blocks to enable smart builds that automatically
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
     useminPrepare: {
@@ -173,14 +173,10 @@ module.exports = function (grunt) {
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
       options: {
-        assetsDirs: [
-          '<%= config.dist %>',
-          '<%= config.dist %>/images',
-          '<%= config.dist %>/styles'
-        ]
+        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images', '<%= config.dist %>/assets/css/']
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
-      css: ['<%= config.dist %>/styles/{,*/}*.css']
+      css: ['<%= config.dist %>/assets/css/{,*/}*.css']
     },
 
     // The following *-min tasks produce minified files in the dist folder
@@ -235,7 +231,7 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
-          src: [ 'lib/**' ]
+          src: [ 'lib/**', 'index.html' ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
@@ -306,11 +302,11 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
-    'concat:generated',
-    'cssmin:generated',
-    'uglify:generated',
     'processhtml',
+    'concurrent:dist',
+    'concat',
+    'cssmin',
+    'uglify',
     'copy:dist',
     'rev',
     'usemin',
