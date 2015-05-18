@@ -7,10 +7,26 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
+    <!-- build:css assets/css/app.min.css -->
+        <link rel="stylesheet" href="styles/app.css" />
+    <!-- endbuild -->
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- build:include components/navigator.html -->
+    <!-- /build -->
+    <!-- build:include components/intro.html -->
+    <!-- /build -->
+    <!-- build:include components/about.html -->
+    <!-- /build -->
+    <!-- build:include components/design.html -->
+    <!-- /build -->
+    <!-- build:include components/development.html -->
+    <!-- /build -->
 
-<!-- bower:js -->
-<!-- endbower -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- build:js assets/js/app.min.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

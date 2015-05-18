@@ -18,6 +18,20 @@ module.exports = function (grunt) {
     // Project settings
     config: config,
 
+    processhtml: {
+      options: {
+        // Task-specific options go here.
+      },
+      dist: {
+        options: {
+          process: true
+        },
+        files: {
+          'dist/index.html': ['<%= config.app %>/index.html']
+        }
+      }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -221,7 +235,7 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
-          src: [ 'components/**', 'app.js', 'lib/**', 'index.html' ]
+          src: [ 'lib/**' ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
@@ -295,7 +309,8 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'concat:generated',
     'cssmin:generated',
-    //'uglify:generated',
+    'uglify:generated',
+    'processhtml',
     'copy:dist',
     'rev',
     'usemin',

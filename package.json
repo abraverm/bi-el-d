@@ -42,6 +42,7 @@
     "grunt-rev": "~0.1.0",
     "grunt-contrib-htmlmin": "~0.4.0",
     "grunt-svgmin": "~2.0.1",
-    "grunt-contrib-imagemin": "~0.9.4"
+    "grunt-contrib-imagemin": "~0.9.4",
+    "grunt-processhtml": "~0.3.7"
   }
 }
