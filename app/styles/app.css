@@ -51,6 +51,14 @@ html {
     color: #2fa4e7;
 }
 
+.well {
+    border-color: #285e8e;
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+.title {
+    margin-top: 15vh;
+}
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
@@ -69,23 +77,33 @@ of those sections to manage the look and feel of the site. */
 
 .about-section {
     height: 100%;
-    padding-top: 150px;
     text-align: center;
     background: #eee;
 }
 
 .design-section {
     height: 100%;
-    padding-top: 150px;
     text-align: center;
-    background: #fff;
-}
+    background-image: url("../../images/design.jpg");
+    background-position: center;
+    min-height : 100%;
+    min-width : 100%;
+    background-repeat:no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    }
 
 .development-section {
     height: 100%;
-    padding-top: 150px;
     text-align: center;
     background: #eee;
+    background-image: url("../../images/development.jpg");
+    background-position: center;
+    min-height : 100%;
+    min-width : 100%;
+    background-repeat:no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .brand {
@@ -189,20 +207,20 @@ of those sections to manage the look and feel of the site. */
 ************************/
 
 .btn.outline {
-    background: none;
+    background: rgba(255, 255, 255, 0.95);
     padding: 12px 22px;
 }
 .btn-primary.outline {
-    border: 2px solid whitesmoke;
-    color: whitesmoke;
+    border: 2px solid #285e8e;
+    color: #357ebd;
 }
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-    color: white;
-    border-color: white;
+    color: #357ebd;
+    border-color: #285e8e;
 }
 .btn-primary.outline:active, .btn-primary.outline.active {
-    border-color: white;
-    color: white;
+    border-color: #285e8e;
+    color: #357ebd;
     box-shadow: none;
 }
 
