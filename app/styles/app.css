@@ -57,7 +57,19 @@ html {
 }
 
 .title {
-    margin-top: 15vh;
+    margin-top: 10vh;
+}
+
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(http://link-to-your/image.jpg) no-repeat;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
@@ -98,6 +110,19 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #eee;
     background-image: url("../../images/development.jpg");
+    background-position: center;
+    min-height : 100%;
+    min-width : 100%;
+    background-repeat:no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.contact-section {
+    height: 100%;
+    text-align: center;
+    background: #eee;
+    background-image: url("../../images/contact.jpg");
     background-position: center;
     min-height : 100%;
     min-width : 100%;
