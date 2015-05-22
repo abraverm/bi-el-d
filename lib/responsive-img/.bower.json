@@ -1,0 +1,14 @@
+{
+  "name": "responsive-img",
+  "homepage": "https://github.com/drewbrolik/Responsive-Img",
+  "version": "1.5.0",
+  "_release": "1.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.5.0",
+    "commit": "c919e5997e345e84d0c9cc77dcbeeb2a22392bae"
+  },
+  "_source": "git://github.com/drewbrolik/Responsive-Img.git",
+  "_target": "~1.5.0",
+  "_originalSource": "responsive-img"
+}
