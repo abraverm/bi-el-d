@@ -21,14 +21,19 @@ $(function() {
 
 (function ($) {
     $(document).ready(function(){
-
+        $('.fit').flowtype();
+        $('.circular').responsiveImg({
+            breakpoints : {
+                "_small":100,
+                "_medium":200,
+                "_large":300
+            }});
         // hide .navbar first
         $(".navbar").hide();
 
         // fade in .navbar
         $(function () {
             $(window).scroll(function () {
-
                 // set distance user needs to scroll before we start fadeIn
                 if ($(this).scrollTop() > (window.outerHeight-window.outerHeight/2)) {
                     $('.navbar').fadeIn();

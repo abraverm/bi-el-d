@@ -15,11 +15,201 @@ html {
     width: 100%;
     height: 100%;
 }
-
-@media(min-width:767px) {
+@media (max-width: 768px){
     .top-nav-collapse {
         padding: 0;
     }
+
+    .intro-section {
+        text-align: center;
+        background-image: url("../../images/intro.jpg");
+        background-position: right;
+        background-size: 600%;
+        min-height : 150%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .about-section {
+        text-align: center;
+        background: #eee;
+        min-height : 100%;
+        min-width : 100%;
+    }
+
+    .design-section {
+        text-align: center;
+        background-image: url("../../images/design.jpg");
+        background-position: center;
+        background-size: 600%;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .development-section {
+        text-align: center;
+        background: #eee;
+        background-image: url("../../images/development.jpg");
+        background-position: center;
+        background-size: 600%;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .contact-section {
+        text-align: center;
+        background: #eee;
+        background-image: url("../../images/contact.jpg");
+        background-position: center;
+        background-size: 600%;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+
+
+@media(min-width:768px) and (max-width: 1200px){
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+    .intro-section {
+        height: 150%;
+        text-align: center;
+        background-image: url("../../images/intro.jpg");
+        background-position: center;
+        background-size: 300%;
+        min-height : 150%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .about-section {
+        height: 100%;
+        text-align: center;
+        background: #eee;
+    }
+
+    .design-section {
+        height: 150%;
+        text-align: center;
+        background-image: url("../../images/design.jpg");
+        background-position: center;
+        background-size: 300%;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .development-section {
+        height: 150%;
+        text-align: center;
+        background: #eee;
+        background-image: url("../../images/development.jpg");
+        background-position: center;
+        background-size: 300%;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .contact-section {
+        height: 150%;
+        text-align: center;
+        background: #eee;
+        background-image: url("../../images/contact.jpg");
+        background-position: center;
+        background-size: 300%;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+
+@media(min-width:1200px) {
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+    .intro-section {
+        height: 100%;
+        text-align: center;
+        background-image: url("../../images/intro.jpg");
+        background-position: center;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .about-section {
+        height: 100%;
+        text-align: center;
+        background: #eee;
+    }
+
+    .design-section {
+        height: 100%;
+        text-align: center;
+        background-image: url("../../images/design.jpg");
+        background-position: center;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .development-section {
+        height: 100%;
+        text-align: center;
+        background: #eee;
+        background-image: url("../../images/development.jpg");
+        background-position: center;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .contact-section {
+        height: 100%;
+        text-align: center;
+        background: #eee;
+        background-image: url("../../images/contact.jpg");
+        background-position: center;
+        min-height : 100%;
+        min-width : 100%;
+        background-repeat:no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .navbar {
@@ -51,84 +241,14 @@ html {
     color: #2fa4e7;
 }
 
-.well {
+.panel {
     border-color: #285e8e;
     background-color: rgba(245, 245, 245, 0.9);
+    padding: 2vw;
 }
 
 .title {
     margin-top: 10vh;
-}
-
-.circular {
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(http://link-to-your/image.jpg) no-repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
-of those sections to manage the look and feel of the site. */
-
-.intro-section {
-    height: 100%;
-    text-align: center;
-    background-image: url("../../images/intro.jpg");
-    background-position: center;
-    min-height : 100%;
-    min-width : 100%;
-    background-repeat:no-repeat;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.about-section {
-    height: 100%;
-    text-align: center;
-    background: #eee;
-}
-
-.design-section {
-    height: 100%;
-    text-align: center;
-    background-image: url("../../images/design.jpg");
-    background-position: center;
-    min-height : 100%;
-    min-width : 100%;
-    background-repeat:no-repeat;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    }
-
-.development-section {
-    height: 100%;
-    text-align: center;
-    background: #eee;
-    background-image: url("../../images/development.jpg");
-    background-position: center;
-    min-height : 100%;
-    min-width : 100%;
-    background-repeat:no-repeat;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.contact-section {
-    height: 100%;
-    text-align: center;
-    background: #eee;
-    background-image: url("../../images/contact.jpg");
-    background-position: center;
-    min-height : 100%;
-    min-width : 100%;
-    background-repeat:no-repeat;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .brand {
